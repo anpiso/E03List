@@ -5,10 +5,12 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
 import java.util.ArrayList;
 
 public class RecyclerView1Activity extends AppCompatActivity {
@@ -32,7 +34,7 @@ public class RecyclerView1Activity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(recyclerView1Adapter);
 
-        Button b = (Button)findViewById(R.id.btnAdd);
+        Button b = (Button) findViewById(R.id.btnAdd);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
